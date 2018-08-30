@@ -1,1 +1,11 @@
+stages:
+- name: ls
+  steps:
+  - runScriptConfig:
+      image: busybox:latest
+      shellScript: ls
+  when:
+    branch:
+      include:
+      - master
 timeout: 60
