@@ -8,6 +8,13 @@ stages:
     branch:
       exclude:
       - master
+- name: test
+  steps:
+  - runScriptConfig:
+      image: busybox:latest
+      shellScript: |-
+        ls
+        ls
 timeout: 60
 branch:
   exclude:
