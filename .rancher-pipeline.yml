@@ -13,8 +13,14 @@ stages:
   - runScriptConfig:
       image: busybox:latest
       shellScript: |-
-        echo "FOO: "
-        echo $FOO
-    env:
-      FOO: bar
+        echo "foobar: "
+        echo $foobar
+        echo "fooalias: "
+        echo $fooalias
+    envFrom:
+    - sourceName: newsecret
+      sourceKey: foobar
+    - sourceName: newsecret
+      sourceKey: foobar
+      targetKey: fooalias
 timeout: 60
