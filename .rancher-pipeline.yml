@@ -10,5 +10,5 @@ stages:
       - master
 timeout: 60
 branch:
-  include:
+  exclude:
   - master
