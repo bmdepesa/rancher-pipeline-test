@@ -6,6 +6,6 @@ stages:
       shellScript: ls
   when:
     branch:
-      include:
+      exclude:
       - master
 timeout: 60
