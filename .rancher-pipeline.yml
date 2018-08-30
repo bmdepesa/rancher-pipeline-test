@@ -12,15 +12,11 @@ stages:
   steps:
   - runScriptConfig:
       image: busybox:latest
-      shellScript: |-
-        echo "foobar: "
-        echo $foobar
-        echo "fooalias: "
-        echo $fooalias
+      shellScript: sleep 5m
     envFrom:
     - sourceName: newsecret
       sourceKey: foobar
     - sourceName: newsecret
       sourceKey: foobar
       targetKey: fooalias
-timeout: 60
+timeout: 1
