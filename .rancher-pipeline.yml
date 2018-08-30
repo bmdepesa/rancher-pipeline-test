@@ -9,3 +9,6 @@ stages:
       exclude:
       - master
 timeout: 60
+branch:
+  include:
+  - master
