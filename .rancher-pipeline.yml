@@ -13,9 +13,8 @@ stages:
   - runScriptConfig:
       image: busybox:latest
       shellScript: |-
-        ls
-        ls
+        echo "FOO: "
+        echo $FOO
+    env:
+      FOO: bar
 timeout: 60
-branch:
-  include:
-  - master
