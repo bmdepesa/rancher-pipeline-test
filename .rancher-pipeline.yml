@@ -9,3 +9,4 @@ stages:
       exclude:
       - master
 timeout: 1
+notification: {}
