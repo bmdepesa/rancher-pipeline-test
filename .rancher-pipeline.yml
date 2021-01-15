@@ -12,6 +12,6 @@ stages:
   steps:
   - runScriptConfig:
       image: python:3.7-stretch
-      shellScript: print("test")
+      shellScript: print("test"))
 timeout: 1
 notification: {}
